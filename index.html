@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+    <h1>Login Page</h1>
+    <form id="loginForm">
+        <label for="name">name:</label>
+        <input type="name" id="name" name="name" required><br><br>
+
+        <label for="address">address:</label>
+        <input type="address" id="address" name="address" required><br><br>
+
+        <label for="phone">phone:</label>
+        <input type="phone" id="phone" name="phone" required><br><br>
+        
+        <label for="birthday">birthday:</label>
+        <input type="birthday" id="birthday" name="birthday" required><br><br>
+
+        <label for="emailAddress">emailAddress:</label>
+        <input type="emailAddress" id="emailAddress" name="emailAddress" required><br><br>
+
+        <label for="bloodType">bloodType:</label>
+        <input type="bloodType" id="bloodType" name="bloodType" required><br><br>
+
+        <label for="height">height:</label>
+        <input type="height" id="height" name="height" required><br><br>
+
+        <label for="weight">weight:</label>
+        <input type="weight" id="weight" name="weight" required><br><br>
+
+    </form>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Login successful!');
+        });
+    </script>
+</body>
+</html>
