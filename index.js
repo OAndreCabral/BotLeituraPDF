@@ -2,7 +2,7 @@ import fs from "fs";
 import puppeteer from "puppeteer";
 import dados from "./dados.js";
 
-const executarDadosAntes = async () => {
+const executarFuncaoDadosAntes = async () => {
     await dados();
     
     const credentialsJson = await JSON.parse(fs.readFileSync("arquivoPDF.json", "utf-8"));
@@ -63,6 +63,6 @@ const executarDadosAntes = async () => {
     await inserirDados();
 }
 
-executarDadosAntes();
+executarFuncaoDadosAntes();
 
 
